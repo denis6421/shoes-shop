@@ -1,0 +1,222 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+body{
+  box-sizing: border-box;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+}
+body::-webkit-scrollbar {
+    width: 0.7em;
+}
+
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+.ng-cloak{
+  display:none;
+}
+button{
+  cursor: pointer;
+  outline: none;
+}
+header{
+  width: 100%;
+  height: 100px;
+  background-color: #F5F5F5;
+  position: relative;
+}
+
+.header_wrapper{
+    position: fixed;
+      width: 100%;
+      height: 100px;
+      background-color: #F5F5F5;
+      z-index: 10;
+
+}
+.mobile_menu_button{
+  width: 100px;
+  height: 50px;
+  display: none;
+  background: transparent;
+  display: flex;
+  flex-direction: column;
+  margin-left: 30px;
+  cursor: pointer;
+  display: none;
+
+}
+
+.mobile_menu_button div{
+  width: 50%;
+  height:4px;
+  background:black;
+  margin-top:  10px;
+}
+.header_wrapper a{
+  text-decoration: none;
+  color: black;
+  font-weight: 300;
+  font-size: 35px;
+  font-family: Copperplate, "Copperplate Gothic Light", fantasy;
+position: absolute;
+top: 30px;
+left: 5%;
+
+
+}
+.mobile_menu_sort_box{
+  margin-right: 30px;
+  display: none;
+}
+.mobile_menu_sort_box select{
+  width: 100px;
+  height: 40px;
+  font-family: inherit;
+}
+header .sort{
+  height: 100%;
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .sort .nav_btn{
+  width: 40%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  }
+  header .sort .nav_btn button{
+    width: 70px;
+    height: 90%;
+    background: none;
+    border: 1px solid white;
+    border-radius: 5px;
+    font-family: inherit;
+  }
+  header .sort .nav_btn button:hover{
+    background: #ADD8E6;
+  }
+header .sort .search_box input{
+  width: 200px;
+  height: 40px;
+  padding-left: 20px;
+  font-size: 20px;
+  outline: none;
+  font-family:inherit;
+}
+
+header .sort .sort_box select{
+  width: 100px;
+  height: 40px;
+  font-family: inherit;
+}
+header .sort .sort_box select option{
+  font-size: 18px;
+}
+
+main{
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+main .shoes_counter{
+position: absolute;
+top:80px;
+left: 100px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.main_container_wrapper{
+  padding-top: 40px;
+  display: flex;
+    flex-wrap: wrap;
+  justify-content:   space-around;
+  align-items:  flex-start;
+    height: auto;
+    width: 100%;
+
+}
+.main_container_wrapper div{
+  width: 250px;
+  height:340px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  cursor: pointer;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+
+}
+.main_container_wrapper div .img{
+  width:100%;
+  height: 50%;
+  text-align: center;
+  margin: auto;
+  border: none;
+}
+.main_container_wrapper div p{
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.main_container_wrapper div:hover p{
+  font-weight: bold;
+}
+.main_container_wrapper div .img img{
+  width: 100%;
+  height:auto;
+}
+.hidden_img_container_wrapper{
+  width:550px;
+  height: 50%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -200px; /* Negative half of height. */
+  margin-left: -275px; /* Negative half of width. */
+  display: none;
+  z-index: 130;
+  background: transparent;
+  text-align: center;
+
+
+}
+.hidden_img_container_wrapper button{
+  position: absolute;
+  right: 50px;
+  top: 5px;
+  width: 60px;
+  height: 60px;
+  font-size: 30px;
+  z-index: 40;
+  background: none;
+  border: none;
+  border-radius: 90px;
+  background: black;
+  color: white;
+
+}
+.hidden_img_container{
+  width: 90%;
+  margin: auto;
+    margin-top: 5%;
+  height: 90%;
+  overflow: hidden;
+}
+
+.hidden_img_container img{
+  width: 80%;
+  max-height: 100%;
+  margin: auto;
+  }

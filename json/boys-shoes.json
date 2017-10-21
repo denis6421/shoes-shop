@@ -1,0 +1,35 @@
+[
+  {
+"url": "images/boys/nike1.jfif",
+"name": "Air Jordan 12 Retro",
+"price": 190
+}, {
+"url": "images/boys/nike2.jfif",
+"name": "Air Jordan 1 Retro High Flyknit",
+"price": 180
+}, {
+"url": "images/boys/nike3.jfif",
+"name": "Nike SF Air Force 1",
+"price": 180
+}, {
+"url": "images/boys/nike4.jfif",
+"name": "Nike Zoom Fly",
+"price": 150
+}, {
+"url": "images/boys/nike5.jfif",
+"name": "Nike Metcon 3",
+"price": 130
+}, {
+"url": "images/boys/nike6.jfif",
+"name": "Nike Zoom Fly",
+"price": 150
+}, {
+"url": "images/boys/nike7.jfif",
+"name": "Nike Zoom Fly",
+"price": 150
+}, {
+"url": "images/boys/nike8.jfif",
+"name": "Nike Zoom Fly",
+"price": 150
+}
+]

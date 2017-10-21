@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html ng-app = 'shop' >
+  <head>
+    <meta charset="utf-8">
+    <title>My Shop</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/query.css">
+  </head>
+  <body  ng-controller="InstantSearchController" class="ng-cloak" ng-controller="PostsCtrlAjax">
+
+        <header>
+
+          <div class="header_wrapper">
+            <div class="mobile_menu_button">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+  <a href="index.html">My Shop</a>
+  <div class="mobile_menu_sort_box">
+    <select  ng-model="price"  >
+      <option value="-price">High price</option>
+      <option value="price">Low price</option>
+    </select>
+  </div>
+            <div class="sort">
+              <div class="search_box"><input type="text" placeholder="Search..." ng-model="searchString"></div>
+              <div class="nav_btn">
+                <button  ng-click="men()">Men</button>
+                <button  ng-click="women()">Women</button>
+                <button  ng-click="boys()">Boys</button>
+                <button  ng-click="girls()">Girls</button>
+              </div>
+              <div class="sort_box">
+                <select  ng-model="price"  >
+                  <option value="-price">High price</option>
+                  <option value="price">Low price</option>
+                </select>
+              </div>
+            </div>
+  </div>
+        </header>
+
+
+            <main>
+
+                </div>
+                <div class="hidden_img_container_wrapper">
+                  <button ng-click = "hide()">&#10005;</button>
+                  <div class="hidden_img_container">
+
+                  </div>
+
+
+                </div>
+              <p class="shoes_counter">{{name}} ({{items.length}})</p>
+              <div class="main_container_wrapper">
+
+
+                <div ng-repeat = 'i in items | searchFor:searchString | orderBy: price' class="item" >
+                  <div class="img" ng-click="show($event)"><img src={{i.url}} alt=""></div>
+                  <p>{{i.name}}</p>
+                  <p>{{i.price}}$</p>
+                </div>
+                  </div>
+
+
+            </main>
+
+
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+     <script src="js/jquery-3.2.1.min.js" charset="utf-8"></script>
+
+    <script src="js/main.js" charset="utf-8"></script>
+    <script src="js/body.js" charset="utf-8"></script>
+  </body>
+</html>

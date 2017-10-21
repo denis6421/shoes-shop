@@ -1,0 +1,95 @@
+@media screen and (max-width: 1250px){
+header .sort{
+  width: 65%;
+}
+header .sort .search_box input{
+  width: 150px;
+}
+header .sort .nav_btn{
+  width: 50%;
+}
+.header_wrapper a{
+  font-size: 25px;
+  left: 40px;
+  top: 40px;
+}
+}
+@media screen and (min-width: 980px){
+  .sort{
+    display: flex!important;
+  }
+}
+@media screen and (max-width: 980px){
+header .sort{
+  flex-direction: column;
+  height: 300px;
+  position: fixed;
+  left: 0px;
+  top:100px;
+  width: 200px;
+  background: #F5F5F5;
+  display: none;
+}
+header .sort .nav_btn{
+  flex-direction: column;
+  height: 80%;
+  width: 100%;
+  order: 0;
+  padding-top: 10px;
+
+}
+header .sort .nav_btn button{
+  width:100%;
+  font-size: 20px;
+}
+header .sort .sort_box{
+  display: none;
+}
+header .sort div:first-child{
+
+
+}
+.sort div:first-child input{
+    background: transparent;
+    border:none;
+    width: 90%;
+
+}
+.sort div:first-child input::placeholder{
+  text-align: center;
+}
+.header_wrapper a{
+position: initial;
+
+}
+.header_wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.mobile_menu_sort_box{
+  display: block;
+
+}
+.mobile_menu_sort_box option{
+  font-size: 20px;
+}
+.mobile_menu_button{
+  display: block;
+}
+}
+@media screen and (max-width: 600px){
+  main .shoes_counter{
+    position: static;
+  width: 100%;
+  text-align: center;
+  margin-top: 50px;
+  }
+  .main_container_wrapper{
+    padding-top: 0px;
+  }
+  .main_container_wrapper div{
+    margin-top: 10px;
+  }
+}
