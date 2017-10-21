@@ -91,5 +91,42 @@ position: initial;
   }
   .main_container_wrapper div{
     margin-top: 10px;
+
+  }
+  .hidden_img_container_wrapper{
+    width:450px;
+    height: 50%;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    margin-top: -200px; /* Negative half of height. */
+    margin-left: -225px; /* Negative half of width. */
+    display: none;
+    z-index: 130;
+    background: transparent;
+    text-align: center;
+  }
+  .header_wrapper a{
+    font-size: 18px;
+
+  }
+  .mobile_menu_sort_box option{
+    font-size: 20px;
+
+  }
+  .mobile_menu_sort_box select{
+    width: 70px;
+    height: 40px;
+    font-family: inherit;
+  }
+  header .sort{
+    flex-direction: column;
+    height: 300px;
+    position: fixed;
+    left: 0px;
+    top:100px;
+    width: 100%;
+    background: #F5F5F5;
+    display: none;
   }
 }

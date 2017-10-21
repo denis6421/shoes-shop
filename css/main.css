@@ -50,6 +50,7 @@ header{
   margin-left: 30px;
   cursor: pointer;
   display: none;
+  outline: none;
 
 }
 
@@ -74,6 +75,7 @@ left: 5%;
 .mobile_menu_sort_box{
   margin-right: 30px;
   display: none;
+
 }
 .mobile_menu_sort_box select{
   width: 100px;
@@ -203,8 +205,8 @@ left: 100px;
   background: none;
   border: none;
   border-radius: 90px;
-  background: black;
-  color: white;
+  background: 	#00FFFF;
+  color: black;
 
 }
 .hidden_img_container{
