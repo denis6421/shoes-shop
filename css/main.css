@@ -41,25 +41,66 @@ header{
 
 }
 .mobile_menu_button{
-  width: 130px;
-  height: 50px;
-  display: none;
-  background: transparent;
-  display: flex;
-  flex-direction: column;
+  width: 60px;
+  height: 40px;
+  position: relative;
   margin-left: 30px;
+  transform: rotate(0deg);
+  transition: .5s ease-in-out;
   cursor: pointer;
-  display: none;
-  outline: none;
-
 }
 
-.mobile_menu_button div{
-  width: 40%;
-  height:4px;
-  background:black;
-  margin-top:  10px;
+.mobile_menu_button span{
+  display: block;
+  position: absolute;
+  height: 6px;
+  width: 100%;
+  background: black;
+  border-radius: 9px;
+  opacity: 1;
+  left: 0;
+
+  transform: rotate(0deg);
+
+  transition: .25s ease-in-out;
 }
+.mobile_menu_button span:nth-child(1) {
+  top: 0px;
+
+  transform-origin: left center;
+}
+
+.mobile_menu_button span:nth-child(2) {
+  top: 15px;
+
+  transform-origin: left center;
+}
+
+.mobile_menu_button span:nth-child(3) {
+  top: 30px;
+
+  transform-origin: left center;
+}
+
+.mobile_menu_button.open span:nth-child(1) {
+
+  transform: rotate(45deg);
+  top: -3px;
+  left: 8px;
+}
+
+.mobile_menu_button.open span:nth-child(2) {
+  width: 0%;
+  opacity: 0;
+}
+
+.mobile_menu_button.open span:nth-child(3) {
+  
+  transform: rotate(-45deg);
+  top: 39px;
+  left: 8px;
+}
+
 .header_wrapper a{
   text-decoration: none;
   color: black;
@@ -73,10 +114,10 @@ left: 5%;
 
 }
 .mobile_menu_sort_box{
-  margin-right: 30px;
-  display: none;
 
+  display: none;
   outline: none;
+
 
 }
 

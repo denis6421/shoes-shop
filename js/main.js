@@ -34,6 +34,7 @@ app.controller("InstantSearchController", function($scope, $http) {
 
   $scope.men = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
+      $scope.clearSearch();
     $http.get('json/men-shoes.json').then(function(result) {
       $scope.items = result.data;
       $scope.name = "MEN SHOES & SNEAKERS";
@@ -41,6 +42,7 @@ app.controller("InstantSearchController", function($scope, $http) {
   }
   $scope.women = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
+      $scope.clearSearch();
     $http.get('json/women-shoes.json').then(function(result) {
       $scope.items = result.data;
       $scope.name = "WOMEN SHOES & SNEAKERS";
@@ -48,7 +50,7 @@ app.controller("InstantSearchController", function($scope, $http) {
   }
   $scope.boys = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
-
+      $scope.clearSearch();
     $http.get('json/boys-shoes.json').then(function(result) {
       $scope.items = result.data;
       $scope.name = "BOYS SHOES & SNEAKERS";
@@ -57,10 +59,14 @@ app.controller("InstantSearchController", function($scope, $http) {
   }
   $scope.girls = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
+      $scope.clearSearch();
+
+
     $http.get('json/girls-shoes.json').then(function(result) {
       $scope.items = result.data;
 
       $scope.name = "GIRLS SHOES & SNEAKERS";
+
     });
 
   }
@@ -82,4 +88,11 @@ app.controller("InstantSearchController", function($scope, $http) {
     ];
 
     $scope.price = {type : $scope.typeOptions[1].value};
+
+      $scope.clearfunction = function(event){
+       event.searchString=null;
+    }
+    $scope.clearSearch = function () {
+       $scope.searchString = "";
+   };
 });
