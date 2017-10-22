@@ -18,12 +18,7 @@
                 <div></div>
             </div>
   <a href="index.html">My Shop</a>
-  <div class="mobile_menu_sort_box">
-    <select  ng-model="price"  >
-      <option value="-price">High price</option>
-      <option value="price">Low price</option>
-    </select>
-  </div>
+    <div class="search_box_mobile"><input type="text" placeholder="Search..." ng-model="searchString"></div>
             <div class="sort">
               <div class="search_box"><input type="text" placeholder="Search..." ng-model="searchString"></div>
               <div class="nav_btn">
@@ -33,9 +28,8 @@
                 <button  ng-click="girls()">Girls</button>
               </div>
               <div class="sort_box">
-                <select  ng-model="price"  >
-                  <option value="-price">High price</option>
-                  <option value="price">Low price</option>
+                <select  ng-model="price" required ng-options='option.value as option.name for option in typeOptions' >
+
                 </select>
               </div>
             </div>
@@ -54,7 +48,16 @@
 
 
                 </div>
-              <p class="shoes_counter">{{name}} ({{items.length}})</p>
+                <div class="shoes_counter_wrapper">
+                  <p class="shoes_counter">{{name}} ({{items.length}})</p>
+                  <div class="mobile_menu_sort_box">
+                    <select  ng-model="price"  >
+                      <option value="-price">High price</option>
+                      <option value="price">Low price</option>
+                    </select>
+                  </div>
+                </div>
+
               <div class="main_container_wrapper">
 
 

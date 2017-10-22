@@ -22,7 +22,7 @@ header .sort .nav_btn{
 @media screen and (max-width: 980px){
 header .sort{
   flex-direction: column;
-  height: 300px;
+  height: 250px;
   position: fixed;
   left: 0px;
   top:100px;
@@ -32,10 +32,8 @@ header .sort{
 }
 header .sort .nav_btn{
   flex-direction: column;
-  height: 80%;
+  height: 100%;
   width: 100%;
-  order: 0;
-  padding-top: 10px;
 
 }
 header .sort .nav_btn button{
@@ -45,14 +43,12 @@ header .sort .nav_btn button{
 header .sort .sort_box{
   display: none;
 }
-header .sort div:first-child{
-
-
+header .search_box_mobile {
+display: block;
 }
 .sort div:first-child input{
     background: transparent;
-    border:none;
-    width: 90%;
+    display: none;
 
 }
 .sort div:first-child input::placeholder{
@@ -78,6 +74,7 @@ position: initial;
 .mobile_menu_button{
   display: block;
 }
+
 }
 @media screen and (max-width: 600px){
   main .shoes_counter{
@@ -110,12 +107,13 @@ position: initial;
     font-size: 18px;
 
   }
-  .mobile_menu_sort_box option{
+  .mobile_menu_sort_box {
     font-size: 20px;
+
 
   }
   .mobile_menu_sort_box select{
-    width: 70px;
+    width: 100px;
     height: 40px;
     font-family: inherit;
   }
@@ -128,5 +126,63 @@ position: initial;
     width: 100%;
     background: #F5F5F5;
     display: none;
+  }
+  .mobile_menu_button{
+    width: 100px;
+  }
+  header .search_box_mobile input{
+    width: 100px;
+
+  }
+  main .shoes_counter_wrapper {
+    display: flex;
+    justify-content: space-around;
+    align-items:  center;
+    flex-direction: column;
+
+
+  }
+  main .shoes_counter_wrapper .shoes_counter{
+      order: 1;
+  }
+  .main_container_wrapper{
+    margin-top: 30px;
+  }
+  .main_container_wrapper div{
+  width: 40%;
+
+  height: 35%;
+  margin: 0px;
+  margin-top: 35px;
+}
+
+.hidden_img_container_wrapper{
+  width:500px;
+  height: 50%;
+
+  margin-top: -200px; /* Negative half of height. */
+  margin-left: -250px; /* Negative half of width. */
+
+}
+}
+@media screen and (max-width: 450px){
+  .hidden_img_container_wrapper{
+    width:400px;
+    height: 50%;
+
+    margin-top: -200px; /* Negative half of height. */
+    margin-left: -200px; /* Negative half of width. */
+
+  }
+  .mobile_menu_button{
+    width: 70px;
+  }
+  header .search_box_mobile input{
+    width: 80px;
+    font-size: 15px;
+padding-left: 5px;
+  }
+  header .search_box_mobile input::placeholder{
+    t
   }
 }

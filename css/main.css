@@ -41,7 +41,7 @@ header{
 
 }
 .mobile_menu_button{
-  width: 100px;
+  width: 130px;
   height: 50px;
   display: none;
   background: transparent;
@@ -55,7 +55,7 @@ header{
 }
 
 .mobile_menu_button div{
-  width: 50%;
+  width: 40%;
   height:4px;
   background:black;
   margin-top:  10px;
@@ -76,11 +76,15 @@ left: 5%;
   margin-right: 30px;
   display: none;
 
+  outline: none;
+
 }
+
 .mobile_menu_sort_box select{
   width: 100px;
   height: 40px;
   font-family: inherit;
+  outline: none;
 }
 header .sort{
   height: 100%;
@@ -89,6 +93,18 @@ header .sort{
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+header .search_box_mobile {
+  display: none;
+}
+header .search_box_mobile input{
+  width: 130px;
+  height: 40px;
+  padding-left: 20px;
+  font-size: 20px;
+  outline: none;
+  font-family:inherit;
+  margin-right: 30px;
 }
 header .sort .nav_btn{
   width: 40%;
@@ -131,15 +147,21 @@ main{
   height: auto;
   position: relative;
 }
-main .shoes_counter{
-position: absolute;
-top:80px;
-left: 100px;
+main .shoes_counter_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items:  center;
+  height: 80px;
+  padding-top: 40px;
+
+}
+main .shoes_counter_wrapper .shoes_counter{
+margin: 0px;
   font-size: 20px;
   font-weight: bold;
 }
 .main_container_wrapper{
-  padding-top: 40px;
+
   display: flex;
     flex-wrap: wrap;
   justify-content:   space-around;

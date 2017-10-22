@@ -31,6 +31,7 @@ app.controller("InstantSearchController", function($scope, $http) {
     $scope.name = "MEN SHOES & SNEAKERS";
 
   });
+
   $scope.men = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
     $http.get('json/men-shoes.json').then(function(result) {
@@ -61,16 +62,24 @@ app.controller("InstantSearchController", function($scope, $http) {
 
       $scope.name = "GIRLS SHOES & SNEAKERS";
     });
+
   }
   $scope.show = function($event) {
     $(".hidden_img_container_wrapper").fadeIn();
     $(".hidden_img_container").html('<img src = ' + $event.target.src + '>');
-
+    $scope.hide();
   }
   $scope.hide = function() {
     $(".hidden_img_container_wrapper button").click(function() {
       $(".hidden_img_container_wrapper").fadeOut();
 
     })
+
   }
+  $scope.typeOptions = [
+    { name: 'High', value: 'price' },
+    { name: 'Low', value: '-price' }
+    ];
+
+    $scope.price = {type : $scope.typeOptions[1].value};
 });
