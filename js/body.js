@@ -4,12 +4,12 @@ $(window).scroll(function() {
     if(height>100){
     $(".header_wrapper").css("height", "60px");
     $(".header_wrapper a").css("top", "10px");
-    
+
       $(".mobile_menu_button").css("transition", "0s");
   }else{
     $(".header_wrapper").css("height", "100px");
     $(".header_wrapper a").css("top", "30px");
-    
+
       $(".mobile_menu_button").css("transition", "0s");
   }
 });
@@ -30,8 +30,7 @@ $(window).scroll(function() {
 $(function(){
   $(".mobile_menu_button").click(function(){
     $(".sort").slideToggle();
-    $(".mobile_menu_button div:nth-child(2)").css("transform", "rotate(60deg)");
-      $(".mobile_menu_button div:last-child").css("transform", "rotate(-60deg)");
+  
   })
 });
 

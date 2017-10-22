@@ -35,6 +35,7 @@ app.controller("InstantSearchController", function($scope, $http) {
   $scope.men = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
       $scope.clearSearch();
+      $('.mobile_menu_button').toggleClass('open');
     $http.get('json/men-shoes.json').then(function(result) {
       $scope.items = result.data;
       $scope.name = "MEN SHOES & SNEAKERS";
@@ -43,6 +44,7 @@ app.controller("InstantSearchController", function($scope, $http) {
   $scope.women = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
       $scope.clearSearch();
+      $('.mobile_menu_button').toggleClass('open');
     $http.get('json/women-shoes.json').then(function(result) {
       $scope.items = result.data;
       $scope.name = "WOMEN SHOES & SNEAKERS";
@@ -51,6 +53,7 @@ app.controller("InstantSearchController", function($scope, $http) {
   $scope.boys = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
       $scope.clearSearch();
+      $('.mobile_menu_button').toggleClass('open');
     $http.get('json/boys-shoes.json').then(function(result) {
       $scope.items = result.data;
       $scope.name = "BOYS SHOES & SNEAKERS";
@@ -60,6 +63,7 @@ app.controller("InstantSearchController", function($scope, $http) {
   $scope.girls = function() {
     $(".hidden_img_container_wrapper").css("display", "none");
       $scope.clearSearch();
+      $('.mobile_menu_button').toggleClass('open');
 
 
     $http.get('json/girls-shoes.json').then(function(result) {
