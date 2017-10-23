@@ -150,7 +150,24 @@
   }
 
 }
+@media screen and (max-width: 600px) and (orientation : landscape){
+  .hidden_img_container_wrapper {
+    width: 450px;
+    height: 400px;
+    position: fixed;
+    top: 60%;
+    left: 50%;
+    margin-top: -150px;
+    /* Negative half of height. */
+    margin-left: -225px;
+    /* Negative half of width. */
+    display: none;
+    z-index: 130;
+    background: transparent;
+    text-align: center;
+  }
 
+}
 @media screen and (max-width: 450px) {
   .hidden_img_container_wrapper {
     width: 400px;
