@@ -30,7 +30,7 @@ $(window).scroll(function() {
 $(function(){
   $(".mobile_menu_button").click(function(){
     $(".sort").slideToggle();
-  
+
   })
 });
 

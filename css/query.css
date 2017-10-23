@@ -88,11 +88,11 @@
   }
   .hidden_img_container_wrapper {
     width: 450px;
-    height: 50%;
+    height: 400px;
     position: fixed;
     top: 60%;
     left: 50%;
-    margin-top: -200px;
+    margin-top: -2250px;
     /* Negative half of height. */
     margin-left: -225px;
     /* Negative half of width. */
@@ -159,7 +159,7 @@
 @media screen and (max-width: 450px) {
   .hidden_img_container_wrapper {
     width: 400px;
-    height: 50%;
+    height:300px;
     margin-top: -200px;
     margin-left: -200px;
 }
@@ -176,7 +176,7 @@
 
   }
   main .shoes_counter_wrapper .shoes_counter{
-  
+
     font-size: 15px;
     font-weight: bold;
   }
