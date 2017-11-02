@@ -93,8 +93,8 @@ app.controller("InstantSearchController", function($scope, $http) {
 
   }
   $scope.typeOptions = [
-    { name: 'High', value: 'price' },
-    { name: 'Low', value: '-price' }
+    { name: 'Low', value: 'price' },
+    { name: 'Heigh', value: '-price' }
     ];
 
     $scope.price = {type : $scope.typeOptions[1].value};
